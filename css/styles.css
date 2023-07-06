@@ -170,7 +170,8 @@ img {
     border: none;
     border-radius: 0;
     background-color: transparent;
-    fill: var(--first-background-color);
+    fill: transparent;
+    stroke: var(--main-text-color);
     cursor: pointer;
   }
 
