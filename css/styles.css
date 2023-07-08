@@ -38,11 +38,7 @@ ul {
 img {
   display: block;
 }
-.container {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 20px;
-}
+
 .link {
   text-decoration: none;
 }
@@ -63,6 +59,13 @@ img {
   justify-content: space-between;
   height: 50px;
   background: var(--main-background-color);
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+.header-menu {
+  display: flex;
+  gap: 86px;
 }
 
 /* -------------------LOGO---------  */
@@ -92,9 +95,9 @@ img {
   border-radius: 0;
   background-color: transparent;
   fill: var(--first-background-color);
-  cursor: pointer;
 }
 .header-menu-order {
+  padding: 0;
   display: none;
 }
 
@@ -116,7 +119,15 @@ img {
   background-color: transparent;
   border: none;
   border-radius: 0;
-  cursor: pointer;
+  padding: 0;
+}
+.mobile-menu-order {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  fill: transparent;
+  stroke: var(--main-background-color);
 }
 /* -------------------mob-menu-NAV--------- */
 .mobile-menu-list {
@@ -140,13 +151,8 @@ img {
   display: block;
 }
 
-.mobile-menu-order {
-  fill: transparent;
-  stroke: var(--main-background-color);
-}
-
 @media screen and (min-width: 380px) {
-  .container {
+  .header-container {
     max-width: 380px;
   }
 }
@@ -154,7 +160,7 @@ img {
 /* --------------------------TABLET-------------------------- */
 
 @media screen and (min-width: 768px) {
-  .container {
+  .header-container {
     max-width: 768px;
     padding: 0 32px;
   }
@@ -166,13 +172,14 @@ img {
 
   /* -------------------BUTTON--------- */
   .header-menu-order {
+    padding: 0;
     display: flex;
     border: none;
     border-radius: 0;
     background-color: transparent;
     fill: transparent;
     stroke: var(--main-text-color);
-    cursor: pointer;
+    margin-left: auto;
   }
 
   .menu-list {
@@ -186,6 +193,7 @@ img {
     line-height: 1.29;
     letter-spacing: -0.04em;
     justify-content: space-between;
+    margin-right: auto;
   }
 
   .menu-list-link {
@@ -193,9 +201,14 @@ img {
     display: block;
   }
 }
+/* --------------------------DESKTOP-------------------------- */
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .header-container {
     max-width: 1280px;
+  }
+  .header-menu {
+    display: flex;
+    gap: 308px;
   }
 }
