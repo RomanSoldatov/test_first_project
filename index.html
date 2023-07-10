@@ -105,7 +105,7 @@
       </div>
     </header>
     <main>
-      <section class="hero is-hidden">
+      <section class="hero">
         <div class="container-hero">
           <div class="avatar-hero-wrap">
             <ul class="avatar-list list">
@@ -303,6 +303,50 @@
             Whether you're looking for a healthy snack or a thoughtful gift, our
             fruit baskets are the perfect choice.
           </p>
+        </div>
+      </section>
+      <section class="we-will-call-you">
+        <div class="section-form-title">
+          <h2 class="title-text">Fresh Harvest Box has got you covered</h2>
+          <p class="paragraph-text">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+
+          <form class="form-recall">
+            <label class="input-recall">
+              <input
+                name="recall"
+                type="tel"
+                placeholder="+380 ()"
+                class="recall"
+                pattern="^\+380\d{9}$"
+                required
+              />
+            </label>
+            <button class="button-recall" type="submit">
+              <span class="text-button-recall">Recall</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="positione-img">
+          <picture class="img-women-positione">
+            <source
+              media="(min-width:1280px)"
+              srcset="./img/call-des-1-1x.png, ./img/call-des-1-2x.png 2x"
+            />
+            <source
+              srcset="./img/call-tab-1-1x.png 1x, ./img/call-tab-1-2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./img/call-mob-1-1x.png 1x, ./img/call-mob-1-2x.png 2x"
+              media="(min-width: 320px)"
+            />
+            <img src="./img/call-mob-1-1x.png" />
+          </picture>
         </div>
       </section>
     </main>
